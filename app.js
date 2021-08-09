@@ -19,13 +19,8 @@ const orderRoutes = require("./routes/order");
 // app
 const app = express();
 
-// db
-
-// const MONGO_URI =
-//   "mongodb+srv://admin:KzGCS3Cft3QGILSW@cluster0.uopz1.mongodb.net/ecommerce?retryWrites=true&w=majority";
-
 const DB_CONNECT =
-  "mongodb+srv://admin:icG7mBcL93DqkIe1@cluster0.eb82b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://admin:Mr271232@cluster0.lxfe3.mongodb.net/ecommerce";
 mongoose.connect(
   DB_CONNECT,
   { useNewUrlParser: true, useUnifiedTopology: true },
