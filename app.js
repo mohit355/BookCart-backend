@@ -20,7 +20,7 @@ const orderRoutes = require("./routes/order");
 const app = express();
 
 const DB_CONNECT =
-  "mongodb+srv://admin:Mr271232@cluster0.lxfe3.mongodb.net/ecommerce";
+  "mongodb+srv://admin1:Mr271232@cluster0.mhpuxxv.mongodb.net/ecommerce";
 mongoose.connect(
   DB_CONNECT,
   { useNewUrlParser: true, useUnifiedTopology: true },
