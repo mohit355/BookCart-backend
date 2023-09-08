@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const expressValidator = require("express-validator");
 const cors = require("cors");
+require("dotenv").config();
 
 require("dotenv").config();
 
@@ -19,8 +20,7 @@ const orderRoutes = require("./routes/order");
 // app
 const app = express();
 
-const DB_CONNECT =
-  "mongodb+srv://admin1:Mr271232@cluster0.mhpuxxv.mongodb.net/ecommerce";
+const DB_CONNECT = process.env.MONGODB_URI;
 mongoose.connect(
   DB_CONNECT,
   { useNewUrlParser: true, useUnifiedTopology: true },
